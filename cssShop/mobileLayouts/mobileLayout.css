@@ -1,0 +1,15 @@
+@import url('../keyFrames/regularKeyframes.css');
+
+#componentGrid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . .";
+}
