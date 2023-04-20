@@ -1,4 +1,5 @@
 @import url('../keyFrames/regularKeyframes.css');
+@import url('./firePitTablet.css');
 
 #componentGrid {
     height: 100vh;

@@ -1,0 +1,124 @@
+
+#firePit {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    height: 155px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". . ."
+      ". FLS ."
+      ". LL RL"
+    ;
+    top: 22%;
+  }
+
+  #leftLog {
+    background-color: #523A28;
+    grid-area: LL;
+    height: 25px;
+    width: 150px;
+    margin: auto;
+    border-radius: 22%;
+    transform: skew(190deg, 350deg);
+    border: 1px solid #000;
+  }
+
+  #rightLog {
+    background-color: #523A28;
+    grid-area: LL;
+    height: 25px;
+    width: 150px;
+    margin: auto;
+    border-radius: 22%;
+    transform: skew(350deg, 190deg);
+    border: 1px solid #000;
+  }
+
+  #kindling {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 2;
+    grid-row: 2;
+    grid-template-areas: "LF MF RF";
+  }
+  
+  #smallFlameShootUpward {
+    grid-area: MF;
+    position: relative;
+    z-index: -1;
+    animation: smallFlameShootUpward 1s linear infinite;
+    -webkit-animation: smallFlameShootUpward 1s linear infinite;
+    -moz-animation: smallFlameShootUpward 1s linear infinite;
+    -o-animation: smallFlameShootUpward 1s linear infinite;
+    -ms-animation: smallFlameShootUpward 1s linear infinite;
+  }
+
+  #smallFlameShootLeft {
+    grid-area: LF;
+    position: relative;
+    z-index: -1;
+    animation: smallFlameShootLeft 2.5s linear infinite;
+    -webkit-animation: smallFlameShootLeft 2.5s linear infinite;
+    -moz-animation: smallFlameShootLeft 2.5s linear infinite;
+    -o-animation: smallFlameShootLeft 2.5s linear infinite;
+    -ms-animation: smallFlameShootLeft 2.5s linear infinite;
+  }
+
+  #smallFlameShootRight {
+    grid-area: RF;
+    position: relative;
+    z-index: -1;
+    animation: smallFlameShootRight 3.5s linear infinite;
+    -webkit-animation: smallFlameShootRight 3.5s linear infinite;
+    -moz-animation: smallFlameShootRight 3.5s linear infinite;
+    -o-animation: smallFlameShootRight 3.5s linear infinite;
+    -ms-animation: smallFlameShootRight 3.5s linear infinite;
+  }
+
+  #flames {
+    grid-area: FLS;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "FLS";
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
+  }
+
+  #mediumFlame {
+    grid-area: MF;
+    animation: mediumFlame 700ms infinite alternate;
+    -webkit-animation: mediumFlame 700ms infinite alternate;
+    -moz-animation: mediumFlame 700ms infinite alternate;
+    -o-animation: mediumFlame 700ms infinite alternate;
+    -ms-animation: mediumFlame 700ms infinite alternate;
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+    opacity: .65;
+  }
+
+  #bigFlame {
+    grid-area: BF;
+    animation: bigFlame 6s infinite alternate;
+    -webkit-animation: bigFlame 6s infinite alternate;
+    -moz-animation: bigFlame 6s infinite alternate;
+    -o-animation: bigFlame 6s infinite alternate;
+    -ms-animation: bigFlame 6s infinite alternate;
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+    z-index: 0.5;
+    opacity: .75;
+  }
